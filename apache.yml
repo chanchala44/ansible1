@@ -1,7 +1,7 @@
 - hosts: myansible
   tasks:
-   - name: Create a file
-   file:
-      path: "/home/ubuntu/chanchu.txt"
-      state: touch
+    - name: Create a file
+        file:
+           path: "/home/ubuntu/chanchu.txt"
+           state: touch
 
