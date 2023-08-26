@@ -1,8 +1,7 @@
-
-- hosts: myansible 
-  become: yes
+- hosts: my-ansible
   tasks:
-    - name: update package
-      apt: update_cache=yes
-    - name: Install apache2 package
-      apt: name=apache2 state=latest
+   - name:Create a file
+   file:
+      path: "/home/ubuntu/chanchu.txt"
+      state: touch
+
